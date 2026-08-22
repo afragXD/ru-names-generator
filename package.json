@@ -1,6 +1,6 @@
 {
   "name": "ru-names-generator",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Generate readable unique names from Russian word dictionaries",
   "keywords": [
     "names",
@@ -26,17 +26,18 @@
   },
   "homepage": "https://github.com/afragXD/ru-names-generator#readme",
   "type": "module",
+  "sideEffects": false,
   "files": [
     "dist"
   ],
-  "main": "./dist/ru-names-generator.cjs",
-  "module": "./dist/ru-names-generator.js",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
-      "import": "./dist/ru-names-generator.js",
-      "require": "./dist/ru-names-generator.cjs"
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
     }
   },
   "scripts": {

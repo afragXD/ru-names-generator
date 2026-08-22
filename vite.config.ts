@@ -3,13 +3,26 @@ import { defineConfig } from 'vite';
 import dts from 'vite-plugin-dts';
 
 export default defineConfig({
-  plugins: [dts({ include: ['src'], rollupTypes: true })],
+  plugins: [dts({ include: ['src'], rollupTypes: true, insertTypesEntry: true })],
   build: {
     lib: {
       entry: resolve(import.meta.dirname, 'src/index.ts'),
-      name: 'RuNamesGenerator',
-      formats: ['es', 'cjs'],
-      fileName: 'ru-names-generator',
+    },
+    rollupOptions: {
+      output: [
+        {
+          format: 'es',
+          preserveModules: true,
+          preserveModulesRoot: 'src',
+          entryFileNames: '[name].js',
+        },
+        {
+          format: 'cjs',
+          preserveModules: true,
+          preserveModulesRoot: 'src',
+          entryFileNames: '[name].cjs',
+        },
+      ],
     },
   },
 });

@@ -10,6 +10,7 @@ lerna-debug.log*
 node_modules
 dist
 dist-ssr
+scripts/tree-shake-test/out
 *.local
 *.tgz
 

@@ -1,9 +1,9 @@
-import type { DictionaryKey } from '../config';
-
 export type Style = 'lowerCase' | 'upperCase' | 'capitalize';
 
+export type Dictionary = readonly string[];
+
 export interface RuNameGenerator {
-  dictionaries: ReadonlyArray<DictionaryKey>;
+  dictionaries: ReadonlyArray<Dictionary>;
   separator: string;
   length: number;
   style: Style;
