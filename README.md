@@ -35,6 +35,7 @@ console.log(name);
 | `colors` | Цвета |
 | `gachimuchi` | Основные персонажи и титулы гачимучи |
 | `languages` | Языки |
+| `starWars` | Персонажи Star Wars (рус.) + локации и термины (оригинал) |
 
 ## API
 
