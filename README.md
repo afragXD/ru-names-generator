@@ -33,6 +33,7 @@ console.log(name);
 | `adjectives` | Прилагательные |
 | `animals` | Животные |
 | `colors` | Цвета |
+| `gachimuchi` | Основные персонажи и титулы гачимучи |
 | `languages` | Языки |
 
 ## API
